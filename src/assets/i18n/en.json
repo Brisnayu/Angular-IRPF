@@ -1,0 +1,19 @@
+{
+    "title": "Income Tax Calculation",
+    "titleForm": "Enter your information",
+    "labelName": "Enter your name",
+    "labelSalary": "Salary/Tax Base",
+    "labelIndividualPerson": "Individual Pension Plan",
+    "textErrorIndividualPerson": "The value cannot exceed €1500",
+    "labelCompanyPension": "Company Pension Plan",
+    "textErrorCompanyPension": "The value cannot exceed €8500",
+    "labelSelfEmployedPension": "Self-Employed Pension Plan",
+    "textErrorSelfEmployedPension": "The value cannot exceed €5750",
+    "sendButton": "Calculate",
+    "titleResults": "Here are the results",
+    "greetings": "Hello",
+    "textPercentage": "In relation to your income, you have a withholding of",
+    "titlePensionPlan": "Due to the amount paid in the pension plan(s)",
+    "textPensionPlan": "You have a deduction of",
+    "resetButton": "Reset"
+}

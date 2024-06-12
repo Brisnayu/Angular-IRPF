@@ -1,0 +1,19 @@
+{
+    "title": "Calculo del IRPF",
+    "titleForm": "Introduce tus datos",
+    "labelName": "Introduce tu nombre",
+    "labelSalary": "Salario/Base Imponible",
+    "labelIndividualPerson": "Plan de pensión de persona física",
+    "textErrorIndividualPerson": "El valor no puede ser superior a 1500€",
+    "labelCompanyPension": "Plan de pensión de empresa",
+    "textErrorCompanyPension": "El valor no puede ser superior a 8500€",
+    "labelSelfEmployedPension": "Plan de pensión de autónomo",
+    "textErrorSelfEmployedPension": "El valor no puede ser superior a 5750€",
+    "sendButton": "Calcular",
+    "titleResults": "Aquí estarán los resultados",
+    "greetings": "Hola",
+    "textPercentage": "En relación a tus ingresos, tienes una retención del",
+    "titlePensionPlan": "Debido a lo pagado en el/los plan/es de pensiones",
+    "textPensionPlan": "Tienes una deducción del",
+    "resetButton": "Reiniciar"
+}

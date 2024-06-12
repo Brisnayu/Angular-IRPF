@@ -24,6 +24,11 @@ export class AppComponent {
     this.translateService.use(this.seletedLanguage)
   }
 
+  public changeLanguage() {
+    this.seletedLanguage = this.seletedLanguage === "es" ? "en" : "es";
+    this.onLanguageChange();
+  }
+
   public changeShowResults(result: boolean): void {
     this.showResults = result;
   }

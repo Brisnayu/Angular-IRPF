@@ -1,52 +1,48 @@
 <div class="container-form">
 
-    <h2>Introduce tus datos:</h2>
+    <h2>{{ 'titleForm' | translate }}:</h2>
 
     <form [formGroup]="formGroup" (submit)="onSubmit()" novalidate>
         <div class="input-field">
-            <label for="message">Introduce tu nombre:</label>
+            <label for="message">{{ 'labelName' | translate }}:</label>
             <input type="text" id="name" name="name" formControlName="name" required>
         </div>
 
         <div class="input-field">
-            <label for="salary">Salario/Base imponible:</label>
+            <label for="salary">{{ 'labelSalary' | translate}}:</label>
             <input type="number" id="salary" name="salary" formControlName="salary" required>
         </div>
 
         <div class="input-field">
-            <label for="individual_pension">Plan de pensión de persona física:</label>
+            <label for="individual_pension">{{ 'labelIndividualPerson' | translate }}:</label>
             <input type="number" id="individual_pension" name="individual_pension" required max="1500"
                 formControlName="individualPension">
             <div *ngIf="formGroup.get('individualPension')?.invalid && formGroup.get('individualPension')?.touched">
-                <div *ngIf="formGroup.get('individualPension')?.errors" style="color: red">El valor no puede ser
-                    superior a
-                    1500€</div>
+                <div *ngIf="formGroup.get('individualPension')?.errors" style="color: red">{{
+                    'textErrorIndividualPerson' | translate }}</div>
             </div>
         </div>
 
         <div class="input-field">
-            <label for="company_pension">Plan de pensión de empresa:</label>
+            <label for="company_pension">{{ 'labelCompanyPension' | translate }}:</label>
             <input type="number" id="company_pension" name="company_pension" required max="8500"
                 formControlName="companyPension">
             <div *ngIf="formGroup.get('companyPension')?.invalid && formGroup.get('companyPension')?.touched">
-                <div *ngIf="formGroup.get('companyPension')?.errors" style="color: red">El valor no puede ser superior a
-                    8500€</div>
+                <div *ngIf="formGroup.get('companyPension')?.errors" style="color: red">{{ 'textErrorCompanyPension' | translate }}</div>
             </div>
         </div>
 
         <div class="input-field">
-            <label for="self_employed_pension">Plan de pensión de autónomo:</label>
+            <label for="self_employed_pension">{{ 'labelSelfEmployedPension' | translate }}:</label>
             <input type="number" id="self_employed_pension" name="self_employed_pension" required max="5750"
                 formControlName="selfEmployedPension">
             <div *ngIf="formGroup.get('selfEmployedPension')?.invalid && formGroup.get('selfEmployedPension')?.touched">
-                <div *ngIf="formGroup.get('selfEmployedPension')?.errors" style="color: red">El valor no puede ser
-                    superior a
-                    5750€</div>
+                <div *ngIf="formGroup.get('selfEmployedPension')?.errors" style="color: red">{{ 'textErrorSelfEmployedPension' | translate }}</div>
             </div>
         </div>
 
         <div class="container-buttons">
-            <input type="submit" value="Calcular" class="submit" [disabled]="formGroup.invalid">
+            <button type="submit" class="submit" [disabled]="formGroup.invalid">{{ 'sendButton' | translate }}</button>
         </div>
     </form>
 

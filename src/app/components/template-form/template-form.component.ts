@@ -4,11 +4,12 @@ import { DataForm } from '../../models/dataForm.interface';
 import { DeductionService } from '../../services/deduction.service';
 import { CommonModule } from '@angular/common';
 import { DataDeduction } from '../../models/dataDeduction.interface';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-template-form',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule],
   templateUrl: './template-form.component.html',
   styleUrl: './template-form.component.scss'
 })

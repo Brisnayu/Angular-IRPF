@@ -1,10 +1,10 @@
-<h1>HOLA DESDE LA RAMA DEVELOP! 😁</h1>
+<h1>{{ 'title' | translate }}</h1>
 
 <div class="container-principal">
     <app-template-form class="template-form" (validResult)="changeShowResults($event)"
         (showName)="getName($event)"></app-template-form>
     <div class="container-results">
-        <h2>Aquí estarán los resultados: </h2>
+        <h2>{{ 'titleResults' | translate }}: </h2>
         <ng-container *ngIf="showResults">
             <app-template-results [nameForm]="nameForm"></app-template-results>
         </ng-container>

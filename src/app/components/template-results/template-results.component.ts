@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DeductionService } from '../../services/deduction.service';
 import { ResultsForm } from '../../models/resultsForm.interface';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-template-results',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './template-results.component.html',
   styleUrl: './template-results.component.scss'
 })

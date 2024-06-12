@@ -1,0 +1,13 @@
+<h1>HOLA MUNDO!</h1>
+
+<div class="container-principal">
+    <app-template-form class="template-form" (validResult)="changeShowResults($event)"
+        (showName)="getName($event)"></app-template-form>
+    <div class="container-results">
+        <h2>Aquí estarán los resultados: </h2>
+        <ng-container *ngIf="showResults">
+            <app-template-results [nameForm]="nameForm"></app-template-results>
+        </ng-container>
+    </div>
+
+</div>

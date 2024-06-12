@@ -1,0 +1,10 @@
+<div class="response">
+    
+    <p>Hola {{ nameForm }} 👋🏻</p>
+    <p>En relación a tus ingresos, tienes una retención del: {{ resultsForm.resultRangeSalaries }} %</p>
+    <h4>Debido a lo pagado en el/los plan/es de pensiones:</h4>
+    <p>Tienes una deducción de: {{ resultsForm.resultDeduction }} €</p>
+
+    <button (click)="reset()" class="submit">Reiniciar</button>
+    
+</div> 
